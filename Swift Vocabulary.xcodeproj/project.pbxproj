@@ -14,6 +14,7 @@
 		6383604023E276A900005E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6383603E23E276A900005E92 /* LaunchScreen.storyboard */; };
 		6383604923E2772B00005E92 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383604823E2772B00005E92 /* WordsTableViewController.swift */; };
 		6383604B23E2777000005E92 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383604A23E2777000005E92 /* DefinitionViewController.swift */; };
+		6383604E23E27CE800005E92 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383604D23E27CE800005E92 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6383604123E276A900005E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6383604823E2772B00005E92 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		6383604A23E2777000005E92 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		6383604D23E27CE800005E92 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6383603323E276A800005E92 /* AppDelegate.swift */,
 				6383603523E276A800005E92 /* SceneDelegate.swift */,
 				6383604723E276DF00005E92 /* View Controllers */,
+				6383604C23E27CD100005E92 /* Model */,
 				6383603923E276A800005E92 /* Main.storyboard */,
 				6383603C23E276A900005E92 /* Assets.xcassets */,
 				6383603E23E276A900005E92 /* LaunchScreen.storyboard */,
@@ -76,6 +79,14 @@
 				6383604A23E2777000005E92 /* DefinitionViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6383604C23E27CD100005E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6383604D23E27CE800005E92 /* VocabularyWord.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				6383603423E276A800005E92 /* AppDelegate.swift in Sources */,
 				6383603623E276A800005E92 /* SceneDelegate.swift in Sources */,
+				6383604E23E27CE800005E92 /* VocabularyWord.swift in Sources */,
 				6383604923E2772B00005E92 /* WordsTableViewController.swift in Sources */,
 				6383604B23E2777000005E92 /* DefinitionViewController.swift in Sources */,
 			);
