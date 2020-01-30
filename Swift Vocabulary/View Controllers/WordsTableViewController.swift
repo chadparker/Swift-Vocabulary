@@ -35,6 +35,29 @@ class WordsTableViewController: UITableViewController {
         return cell
     }
 
+    // MARK: - Actions
+
+    @IBAction func addButtonWasTapped(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Add word", message: nil, preferredStyle: .alert)
+        alert.addTextField { textField in
+            textField.placeholder = "Word"
+        }
+        alert.addTextField { textField in
+            textField.placeholder = "Definition"
+        }
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            guard let word = alert.textFields![0].text,
+                let definition = alert.textFields![1].text,
+                !word.isEmpty,
+                !definition.isEmpty else { return }
+            let vocabWord = VocabularyWord(word: word, definition: definition)
+            self.vocabWords.append(vocabWord)
+            self.tableView.reloadData()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
