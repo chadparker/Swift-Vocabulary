@@ -64,7 +64,7 @@
 				6383603523E276A800005E92 /* SceneDelegate.swift */,
 				6383604723E276DF00005E92 /* View Controllers */,
 				6383604C23E27CD100005E92 /* Model */,
-				6383603923E276A800005E92 /* Main.storyboard */,
+				6383604F23E2890300005E92 /* Views */,
 				6383603C23E276A900005E92 /* Assets.xcassets */,
 				6383603E23E276A900005E92 /* LaunchScreen.storyboard */,
 				6383604123E276A900005E92 /* Info.plist */,
@@ -87,6 +87,14 @@
 				6383604D23E27CE800005E92 /* VocabularyWord.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6383604F23E2890300005E92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6383603923E276A800005E92 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
